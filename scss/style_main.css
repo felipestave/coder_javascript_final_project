@@ -11016,7 +11016,16 @@ textarea.form-control-lg {
     color: white;
   }
 }
-@media (min-width: 912px) {
+@media (max-width: 912.1px) {
+  .navbar-collapse {
+    background-color: black;
+    justify-content: center;
+  }
+  .active-custom {
+    background-color: gray;
+  }
+}
+@media (min-width: 912.1px) {
   .navbar-expand-custom {
     flex-wrap: nowrap;
     justify-content: flex-start;
