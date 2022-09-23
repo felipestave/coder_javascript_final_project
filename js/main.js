@@ -161,13 +161,14 @@ function main(itemsFetch) {
                     iconColor: "black",
                     html: '<p class="text-custom-2">Tu carrito ya está vacío</p>'
                 })
-            } else {
+            } 
+            else {
                 const swalWithBootstrapButtons = Swal.mixin({
                     customClass: {
                         confirmButton: 'btn btn-dark',
                         cancelButton: 'btn btn-light'
                     },
-                    buttonsStyling: true
+                    buttonsStyling: false
                 })
 
                 swalWithBootstrapButtons.fire({
