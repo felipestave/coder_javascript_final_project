@@ -8,11 +8,13 @@
     <meta name="description"
         content="Sé parte de la construcción de tu propio estilo. Atrévete a crear la mejor version de ti" />
     <meta name="keywords" content="estilo, elegancia, calidad, moda, autenticidad" />
-    <title>Shop Woman</title>
+    <title>Shop Man</title>
+    <script src="https://kit.fontawesome.com/5dd9614d57.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../scss/style_main.css">
+
 </head>
 
-<body>
+<body class="bg-light">
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="facebook" viewBox="0 0 16 16">
@@ -52,209 +54,46 @@
                             <a class="nav-personalizado" href="./about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-personalizado" href="./contact.html">Contact</a>
+                            <a class="nav-personalizado " href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+
+                            <i class="pe-auto fa-solid fa-bag-shopping icon" aria-label="View your shopping cart"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"></i>
+                            <span class="top-0 start-100 translate-middle badge rounded-pill bg-danger" id="totalItems">
+                                0
+                            </span>
                         </li>
                     </ul>
+
                 </div>
             </div>
         </nav>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel" class=" text-custom-2 fw-bold">Cesta</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+                <div id="cart-container">
+
+
+
+                </div>
     </header>
 
     <main>
+
         <div class="container px-4 py-5" id="custom-cards">
             <h2 class="pb-2 border-bottom text-center text-custom ">WOMEN'S CLOTHING</h2>
 
-            <div class="album py-5 bg-light">
-                <div class="container">
+            <div class="album py-5 bg-light ">
+                <div class="container ">
 
-                    <div id="items" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 d-flex align-content-center">
-
-
-
-                        <div class="col ">
-                            <img src="../img/blusa_mujer.jpg" class="card-img-top border-custom-2" width="100%"
-                                height="225" alt="chaqueta de mujer">
-
-                            <div class="card-body overflow-hidden ">
-
-                                <h5 class="text-center text-item bg-black border-custom">Chaqueta de jean</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group w-100">
-                                        <a role="button" href="#" class="btn btn-dark text-center">Agregar</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-
-
-                        <div class="col">
-                            <img src="../img/gafas-mujer-m.jpg" class="card-img-top border-custom-2" width="100%"
-                                height="225" alt="gafas de hombre">
-
-                            <div class="card-body overflow-hidden ">
-
-                                <h5 class="text-center text-item bg-black border-custom">Gafas de sol</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group w-100">
-                                        <a role="button" href="#" class="btn btn-dark text-center">Agregar</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="col">
-                            <img src="../img/zapato_tacon_bajo.jpg" class="card-img-top border-custom-2" width="100%"
-                                height="225" alt="Zapatos Nike">
-
-                            <div class="card-body overflow-hidden ">
-
-                                <h5 class="text-center text-item bg-black border-custom">Zapatos de tacón bajo</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group w-100">
-                                        <a role="button" href="#" class="btn btn-dark text-center">Agregar</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col">
-                            <img src="../img/reloj_dw_m.jpg" class="card-img-top border-custom-2 mt-5" width="100%"
-                                height="225" alt="Reloj de hombre">
-
-                            <div class="card-body overflow-hidden ">
-
-                                <h5 class="text-center text-item bg-black border-custom">Reloj Daniel Wellington</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group w-100">
-                                        <a role="button" href="#" class="btn btn-dark text-center">Agregar</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="col">
-                            <img src="../img/coco_chanel.jpg" class="card-img-top border-custom-2 mt-5" width="100%"
-                                height="225" alt="Perfume de hombre">
-
-                            <div class="card-body overflow-hidden ">
-
-                                <h5 class="text-center text-item bg-black border-custom">Coco chanel</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group w-100">
-                                        <a role="button" href="#" class="btn btn-dark text-center">Agregar</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-
-
-
-
-                        <div class="col">
-                            <img src="../img/woman-wallet.jpg" class="card-img-top border-custom-2 mt-5" width="100%"
-                                height="225" alt="billetera de hombre">
-
-                            <div class="card-body overflow-hidden ">
-
-                                <h5 class="text-center text-item bg-black border-custom">billtera de cuero</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group w-100">
-                                        <a role="button" href="#" class="btn btn-dark text-center">Agregar</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-
-
-
-
-                        <div class="col">
-                            <img src="../img/bag-mujer.jpg" class="card-img-top border-custom-2 mt-5" width="100%"
-                                height="225" alt="bolso de cuero">
-
-                            <div class="card-body overflow-hidden ">
-
-                                <h5 class="text-center text-item bg-black border-custom">bolso prada</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group w-100">
-                                        <a role="button" href="#" class="btn btn-dark text-center">Agregar</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-
-
-
-
-                        <div class="col">
-                            <img src="../img/tacon_terciopelo.jpg" class="border-custom-2 mt-5" width="100%"
-                                height="225" alt="correa de hombre">
-
-                            <div class="card-body overflow-hidden ">
-
-                                <h5 class="text-center text-item bg-black border-custom">Tacones de terciopelo</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group w-100">
-                                        <a role="button" href="#" class="btn btn-dark text-center">Agregar</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-
-
-
-
-                        <div class="col">
-                            <img src="../img/collar-mujer.jpg" class="border-custom-2 mt-5" width="100%" height="225"
-                                alt="collar">
-
-                            <div class="card-body overflow-hidden ">
-
-                                <h5 class="text-center text-item bg-black border-custom">Collar con colgante</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group w-100">
-                                        <a role="button" href="#" class="btn btn-dark text-center">Agregar</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
+                    <div id="items" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
 
 
@@ -267,6 +106,7 @@
 
 
     </main>
+    <hr>
     <div class="container">
         <footer class="py-5">
             <div class="row">
@@ -315,7 +155,7 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-5 my-4 border-top">
                 <p>&copy; 2022 Piguz's Tienda.</p>
                 <ul class="list-unstyled d-flex">
                     <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
@@ -338,8 +178,15 @@
 
             </div>
         </footer>
-        <script src="../js/woman.js"></script>
-        <script src="../js/bootstrap.js"></script>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/woman.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>

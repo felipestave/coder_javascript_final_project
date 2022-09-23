@@ -10,6 +10,8 @@
   <meta name="keywords" content="estilo, elegancia, calidad, moda, autenticidad" />
   <title>Piguz's Tienda</title>
   <link rel="stylesheet" href="./scss/style_main.css">
+  <script src="https://kit.fontawesome.com/5dd9614d57.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="bg-personalizado">
@@ -51,16 +53,45 @@
             <li class="nav-item">
               <a class="nav-personalizado" href="./pages/contact.html">Contact</a>
             </li>
+            <li class="nav-item">
+
+              <i class="pe-auto fa-solid fa-bag-shopping icon" aria-label="View your shopping cart"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+              <span class="top-0 start-100 translate-middle badge rounded-pill bg-danger" id="totalItems">
+                0
+              </span>
+            </li>
           </ul>
+
         </div>
       </div>
     </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel" class=" text-custom-2 fw-bold">Cesta</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+        <div id="cart-container">
+
+
+
+
+        </div>
+        </ul>
+      </div>
+    </div>
+    </nav>
+  </header>
+  </ul>
+  </div>
+  </div>
+  </nav>
   </header>
 
   <main>
-    <!-- <div>
-          <img src="./img/hero_woman_5.jpg" class="mx-lg-auto img-fluid hero__img position-absolute top-0 " alt="">
-        </div> -->
+
     <div class="container-fluid-custom position-relative proob">
       <div id="myCarousel" class="carousel slide " data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -87,16 +118,7 @@
               </div>
             </div>
           </div>
-          <!-- <img src="./img/hero_woman_5.jpg" class="mx-lg-auto img-fluid hero__img w-100" alt="">
-        
-                <div class="container position-absolute start-0">
-                  <div class="carousel-caption text-start">
-                    <h1>Example headline.</h1>
-                    <p>Some representative placeholder content for the first slide of the carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                  </div>
-                </div>
-              </div>-->
+
           <div class="carousel-item">
             <img src="./img/hero_woman_3.jpg" class="mx-lg-auto img-fluid hero__img w-100 img1__hero" alt="">
             <div class="custom__container text-start ">
@@ -114,26 +136,6 @@
               </div>
             </div>
           </div>
-          <!-- <div class="carousel-caption_custom text-start">
-                    <h1 class="display-5 fw-bold lh-1 mb-3 text-white">Estamos más allá de la moda</h1>
-                    <p>Some representative placeholder content for the first slide of the carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                  </div>
-                </div> -->
-          <!-- <div class="container hero__container px-4 py-5">
-                  <div class="row g-5 py-5">
-                    <div class="col-sm-8">
-                      <h1 class="display-5 fw-bold lh-1 mb-3 text-white">Estamos más allá de la moda</h1>
-                    </div>
-                  </div> -->
-          <!-- <div class="col-lg-6">
-                      
-                      <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                      </div>
-                    </div> -->
 
 
 
@@ -165,24 +167,7 @@
         </button>
       </div>
     </div>
-    <!-- <div class="container-fluid-custom">
-          <div class="row align-items-md-stretch">
-            <div class="col-md-6">
-              <div class="h-100 p-5 text-white bg-dark rounded-3">
-                <h2>Change the background</h2>
-                <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-                <button class="btn btn-outline-light" type="button">Example button</button>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="h-100 p-5 bg-light border rounded-3">
-                <h2>Add borders</h2>
-                <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-                <button class="btn btn-outline-secondary" type="button">Example button</button>
-              </div>
-            </div>
-          </div>
-        </div> -->
+
     <div class="container col-xxl-8 px-5 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-2 py-3">
         <div class="col-12 col-sm-8 col-lg-6 ">
@@ -331,8 +316,11 @@
 
     </footer>
   </div>
-
-  <script src="./js/bootstrap.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/main-aux.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
