@@ -114,7 +114,7 @@ const updateCart = () => {
                     confirmButton: 'btn btn-dark',
                     cancelButton: 'btn btn-light'
                 },
-                buttonsStyling: true
+                buttonsStyling: false
             })
 
             swalWithBootstrapButtons.fire({
