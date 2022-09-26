@@ -138,7 +138,7 @@ serif;
         z-index: 9999;
         letter-spacing: .05em;
         font-size: 1.1rem;
-        color: white;
+        color: rgb(0, 0, 0);
     }
 }
 @media (max-width: 912.1px) {
@@ -147,7 +147,7 @@ serif;
         justify-content: center;
     }
     .active-custom{
-        background-color:gray
+        background-color:rgb(0, 0, 0)
     }
     }
 @media (min-width: 912.1px) {
